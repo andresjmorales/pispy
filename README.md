@@ -1,2 +1,2 @@
-# pispy
+# PiSpy
 PiSpy
