@@ -6,6 +6,8 @@ import time
 TOTAL_GENERATION_TIME = 1 * 10 ** 12
 
 
+#
+# This runs on the Pi 
 
 
 # plan:
@@ -63,9 +65,23 @@ while (time.time() - start_time < TOTAL_GENERATION_TIME):
         #newp.print_profile()
 
         all_datagrams[ip1] = p1
-        all_datagrams[ip2] = p1
+        all_datagrams[ip2] = p2
 
     # do nothing else
+
+
+# sflowtool will write to file
+# file: sflow_file
+sflow_file = open("sflowtool_output.txt", "r")
+sflow_lines = sflow_file.read().split("\n")  #sflowtool
+
+# every 5 seconds (?) runs detection
+
+
+def detection_new_datagram(sflow_lines):
+    
+    data = 
+
 
 
 '''
